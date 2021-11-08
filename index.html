@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Memory game</title>
+</head>
+<body>
+
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+
+    <div id="mainCount">Time remain: <span id="count">Start</span> Seconds</div>
+
+    <section class="memory-game">
+
+        <div class="memory-card" data-char="breach">
+            <img  class='front-face' src="img/Breach.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card"  data-char="breach">
+            <img  class='front-face' src="img/Breach.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+
+        <div class="memory-card"  data-char="astra">
+            <img  class='front-face' src="img/Astra.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card"  data-char="astra">
+            <img  class='front-face' src="img/Astra.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+
+        <div class="memory-card"  data-char="cypher">
+            <img  class='front-face' src="img/Cypher.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card"  data-char="cypher">
+            <img  class='front-face' src="img/Cypher.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+
+        <div class="memory-card"  data-char="sage">
+            <img  class='front-face' src="img/Sage.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card" data-char="sage">
+            <img  class='front-face' src="img/Sage.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        
+        <div class="memory-card" data-char="viper">
+            <img  class='front-face' src="img/Viper.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card" data-char="viper">
+            <img  class='front-face' src="img/Viper.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+
+        <div class="memory-card" data-char="yoru">
+            <img  class='front-face' src="img/Yoru.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+        <div class="memory-card" data-char="yoru">
+            <img  class='front-face' src="img/Yoru.png" alt="JS">
+            <img class="back-face" src="img/question_badge_bc30c7.png">
+        </div>
+
+    </section>
+
+    <div class="info-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="tries">
+            Wrong Tries: <span class="wrong">0</span>
+            Right Tries: <span class="right">0</span>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

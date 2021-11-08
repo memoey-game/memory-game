@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(180, 222, 230);
+}
+.control-buttons  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #f0ffffda;
+  }
+
+  
+
+  
+  .control-buttons span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5236f4;
+    color: white;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .mainDiv{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    background-color: #f0ffffe5;
+
+}
+
+
+.mainDiv .first, .mainDiv .second{
+    text-align: center;
+    background-color: #674df7;
+    padding: 20px;
+    margin: 5px;
+    width:400px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tryBtn{
+    background-color: yellow;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(15, 11, 11);
+    transition: transform 0.2s;
+}
+
+.tryBtn:hover{
+    transform: scale(1.1,1.1);
+    }
+
+  .info-container { 
+    width: 1080px;
+    margin: 20px auto 0;
+    background-color: #f6f6f6;
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #2196f3;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info-container .name {
+    flex: 1;
+  }
+  
+  .info-container .tries {
+    flex: 1;
+    text-align: right;
+  }
+#mainCount {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+   text-align: center;
+}
+.memory-game {
+    width: 640px;
+    margin: auto;
+    height:100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    perspective: 600px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height:  calc(25% - 10px );
+    position: relative;
+    margin: 5px;
+    transition: transform 0.5s  ;
+    transform-style: preserve-3d;
+}
+
+.memory-card:active{
+    transform: scale(0.97);
+    transition: transform 0.2s  ;
+}
+.front-face,
+.back-face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.memory-card.flip{
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
